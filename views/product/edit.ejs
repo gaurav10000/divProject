@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate') -%>;
+
+<div class="ncontainer">
+
+   
+    <form action="/products/<%= product._id %>?_method=PATCH" method="post">
+
+
+        <label for="name" >Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Product Name" value="<%=product.name%>">
+        <label for="img">Img-URl</label>
+        <input type="url" name="img" id="img" placeholder="Image Link" value="<%=product.img%>">
+        <label for="price">Price</label>
+        <input type="number"  name="price" id="price" placeholder="Enter Product Price" value="<%=product.price%>">
+        <label for="desc">Description</label>
+        <input type="text" name="desc" id="desc" placeholder="Enter Product Name" value="<%=product.desc%>">
+
+        <button style="width: 80px; background-color: #3ec87a; border-radius: 2px; font-size: 1.3rem; margin-left: 250px; margin-top:8px ;">Edit</button>
+
+    </form>
+    
+</div>

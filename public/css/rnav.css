@@ -1,0 +1,60 @@
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: transparent;
+    backdrop-filter: blur(20px); */
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav #logo{
+    height: 8vh;
+    width: 10vw;
+    position: relative;
+}
+#nav #logo img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: contain;
+}
+#nav #more{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+#more a{
+    text-decoration: none;
+    color: #ffa500;
+    position: relative;
+    overflow: hidden;
+}
+#more a::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 90%;
+    left: -100%;
+    transition: all ease 0.4s;
+}
+#more a:hover::after{
+    left: 0;
+}
+#nav #interface{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+#interface a{
+    text-decoration: none;
+    color: #ffa500;
+}

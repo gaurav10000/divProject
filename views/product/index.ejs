@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') -%>;
+
+    <div id="main">
+        <div id="page1">
+            <img id="img1"
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <h1>Explore India</h1>
+        </div>
+        <div id="page3">
+            
+        </div>
+        <div id="page2">
+            <div id="places">
+                <h1>Most Visited Places:</h1>
+            </div>
+            <div id="actualplaces">
+                <% for (var i=0; i< states.length ;i++){ %>
+                    <div id="card">
+                        <img src="<%= states[i].img %>" >
+                        <div id="placename">
+                            <h4 id="pname"><%= states[i].name%></h4>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        
+        
+    </div>

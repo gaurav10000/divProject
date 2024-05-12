@@ -1,0 +1,38 @@
+.scontainer{
+    margin-top:0px;
+    width:100vw;
+    height:100vh;
+    border:2px solid black;
+    display: flex;
+    
+    background-color: rgb(231, 241, 244);
+   
+}
+.scard{
+    text-align: center;
+    margin: 40px 250px;
+    border-radius:8px ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width:500px;
+    height:500px;
+    border:2px solid rgb(8, 7, 7);
+}
+.scard img{
+    margin-top:4px;
+    width:97%;
+    height:350px;
+}
+.stext{
+    text-align:center;
+    margin-top: 5px ;
+    font-size: 1.3rem;
+}
+#but{
+    margin-top: 8px;
+    width:70px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin-left:3px;
+    background-color: rgb(131, 174, 131);
+
+}

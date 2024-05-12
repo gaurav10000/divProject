@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+#pla{
+    height: auto;
+    padding: 10vh 0;
+    width: 100%;
+    background-color: #7F1FD1;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#display{
+    height: auto;
+    width: 80%;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #000;
+}
+#top-right{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+#top-right input{
+    height: 7vh;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+::placeholder{
+    font-size: 16px;
+}
+#top-right button{
+    height: 7vh;
+    width: 10vw;
+    background-color: #7F1FD1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#dbt{
+    /* position: relative; */
+    margin-top: 5vh;
+    height: auto;
+    width: 100%;
+    color: #FF5733;
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    
+}
+#planner-image{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 0px;
+    opacity: 0.7;
+    position: relative;
+}
+#dbt #overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 40px;
+}
+#ssv{
+    display: none;
+    height: 15vh;
+    width: 100%;
+}
+.pl {
+	display: block;
+	width: 6.25em;
+	height: 6.25em;
+}
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
+}
+.pl__ball {
+	animation-name: ball;
+}
+
+/* Dark theme  */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+
+/* Animation */
+@keyframes ring {
+	from {
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
+	}
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
+	}
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
+	}
+}
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
+	}
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
+	}
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
+	}
+}
+
+#connection  #ddv{
+    color: #fff;
+    font-size: 30px;
+    text-align:left;
+    margin-left: 10px;
+}
+#connection{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 4vh;
+}
+.day{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3vh;
+}
+#dday{
+    font-size: 30px;
+    color: #FF5733;
+}
+#actual{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+}
+#actual div:hover{
+    background-color:#4f5f76;
+    /* border-radius: 15px; */
+    cursor: pointer;
+    border: none;
+    transition: all linear 0.5s;
+}
+.morning{
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 0px #beef00;
+    border: none;
+    border-radius: 15px;
+}
+#actual  h4{
+    color: #fff;
+    font-size: 14px;
+}
+#actual h2{
+    color: #beef00;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+#actual  p{
+    color: #fff;
+    font-size: 17px;
+}
+.afternoon{
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 0px #beef00;
+    border: none;
+    border-radius: 15px;
+}
+.evening{
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: center;
+    border: none;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 0px #beef00;
+    border: none;
+    border-radius: 15px;
+}
+#actual i{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #7F1FD1;
+    border: none;
+    padding: 2px;
+    color: #000;
+}

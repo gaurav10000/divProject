@@ -1,0 +1,25 @@
+<% layout('layouts/boilerplate') -%>;
+
+
+<div class="scontainer">
+
+    
+        <div class="scard">
+            <img src="<%= product.img %>" alt="error">
+            
+            <div class="stext" >
+                <h2><%= product.name %></h2>
+                <span><%= product.price %></span>
+                <p><%= product.desc %></p>
+                <form style="display: inline;" action="/products/<%=product._id%>?_method=DELETE" method="post">
+                    <button id="but" style="background-color: rgb(237, 82, 82);">Delete</button >
+                </form>
+                <button id="but"><a href="/products/<%=product._id%>/edit">Edit</a></button >
+                <button id="but">Buy</button >
+                <button  id="but" style="width: 120px; background-color: grey">Add to Cart</button >
+            </div>
+        </div>    
+
+    
+
+</div>

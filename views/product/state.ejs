@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') -%>;
+
+    <div id="pages1">
+        <div id="placedetails">
+            <img src="<%= states.img %>">
+            <div id="bt">
+                <button id="planjourney">Plan Trip</button>
+            </div>
+            <div id="det">
+                <div id="pname">
+                    <h2 id="naame">
+                        <%= states.name%>
+                    </h2>
+                </div>
+                <div id="pdetails">
+                    <h3>
+                        <%= states.des%>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="places">
+            <div id="place">
+                <h4>Things TO See & DO</h4>
+                <br><br>
+                <div id="destination">
+                        
+                    <% for (var i=0; i< places.length ;i++){ %>
+                        
+                        <div id="carding">
+                            <div id="left">
+                                <img src="<%= places[i].img %>"
+                                    alt="">
+                            </div>
+                            <div id="right">
+                                <h5><%= places[i].name%></h5>
+                                <p><%= places[i].des%></p>
+                            </div>
+                            
+                        </div>
+                        <% } %>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
