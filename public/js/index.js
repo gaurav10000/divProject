@@ -11,6 +11,7 @@ function changeimage(){
 cards.forEach(card => {
     card.addEventListener('click' ,()=>{
         const loc = card.querySelector('#pname');
-        window.location.href = `/page/${loc.textContent}`
+        window.location.href = `/page/${loc.innerText}`
+        
     });
 });

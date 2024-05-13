@@ -5,7 +5,7 @@ const State=require("./Models/State")
  const state=[
     {
         name:"Goa",
-        des:" Popularly known as India’s party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!",
+        des:" Popularly known as India's party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!",
         img:"https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         place:[
             {
@@ -77,7 +77,7 @@ const State=require("./Models/State")
         name: "Uttarakhand",
         des: "Uttarakhand, often referred to as the 'Land of Gods', is a state in northern India known for its stunning Himalayan landscapes, sacred pilgrimage sites, and adventure sports. From snow-capped peaks to pristine rivers, Uttarakhand offers a haven for nature lovers and spiritual seekers alike.",
         img: "https://images.unsplash.com/photo-1563293766-4e8ab7be1ea4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHV0dHJha2hhbmQlMjBtdXNzb3JpZXxlbnwwfHwwfHx8MA%3D%3D",
-        place: [
+        place:[
             {
                 name: "Valley of Flowers National Park",
                 des: "A UNESCO World Heritage Site, the Valley of Flowers is a mesmerizing alpine valley known for its diverse flora, including many rare and endangered species. It blooms with vibrant colors during the monsoon season.",
