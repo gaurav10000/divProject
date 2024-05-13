@@ -17,7 +17,7 @@ const  User=require('./Models/User');
 dotenv.config();
 
 //mongodb+srv://divyanshur0603:divy@cluster0.urrt5xq.mongodb.net/Tourist-database
-mongoose.connect('mongodb+srv://divyanshur0603:divy@cluster0.urrt5xq.mongodb.net/Tourist-database')
+mongoose.connect('mongodb://127.0.0.1:27017/Tourist-database')
     .then(()=>{
         console.log('db connected successfully');
     })
@@ -61,8 +61,7 @@ app.use((req, res, next) => {
     next();
 })
 
-
 // seed();
 app.listen(5000,()=>{
     console.log(`server started at port 5000`);
-});
+})

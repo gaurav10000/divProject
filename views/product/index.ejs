@@ -7,9 +7,7 @@
                 alt="">
             <h1>Explore India</h1>
         </div>
-        <div id="page3">
-            
-        </div>
+
         <div id="page2">
             <div id="places">
                 <h1>Most Visited Places:</h1>
@@ -17,14 +15,54 @@
             <div id="actualplaces">
                 <% for (var i=0; i< states.length ;i++){ %>
                     <div id="card">
-                        <img src="<%= states[i].img %>" >
+                        <img src="<%= states[i].img %>">
                         <div id="placename">
-                            <h4 id="pname"><%= states[i].name%></h4>
+                            <h4 id="pname">
+                                <%= states[i].name%>
+                            </h4>
                         </div>
                     </div>
-                <% } %>
+                    <% } %>
             </div>
         </div>
-        
-        
+        <div id="page3">
+            <div id="features">
+                <h1>Features:</h1>
+                <div id="cent">
+                    <div id="lefty">
+                        <div id="list">
+                            <i class="ri-supabase-line"></i>
+                            <p>Provide easy and user Friendly </p> 
+                        </div>
+                        <div id="list">
+                            <!-- <i class="ri-walk-fill"></i> -->
+                            <i class="ri-24-hours-line"></i>
+                            <p>Provide Daily based plan for your journey</p> 
+                        </div>
+                        <div id="list">
+                            <i class="ri-walk-fill"></i>
+                            <p>Provide Most visited places</p> 
+                        </div>
+                    </div>
+                    <div id="righty">
+                        <div id="list">
+                            <i class="ri-time-fill"></i>
+                            <p>Provide time based plan for ur journey</p> 
+                        </div>
+                        <div id="list">
+                            <i class="ri-contract-left-right-line"></i>
+                            <p>Provide easy input based location</p> 
+                        </div>
+                        <div id="list">
+                            <i class="ri-compass-discover-line"></i>
+                            <p>Provide easy Navigation</p> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     </div>

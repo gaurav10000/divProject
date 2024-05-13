@@ -102,7 +102,71 @@ html,body{
     transition: all ease 0.5s;
 }
 #page3{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: #000;
+}
+#page3 #features h1{
+    color: #ffa500;
+    font-size: 5vh;
+    text-align:left;
+    padding: 10vh;
+    margin-top: -10vh;
+}
+#cent{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 15px;
+    gap: 20px;
+}
+#lefty{
+    height: auto;
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    flex-direction: column;
+    gap: 40px;
+}
+#righty{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 40px;
+    margin-left:10px;
+}
+#lefty i{
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+    background-color: #B0FF44;
+    border: none;
+    border-radius: 10px;
+}
+#list{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+#righty i{
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+    background-color: #B0FF44;
+    border: none;
+    border-radius: 10px;
 }
